@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueMoon Studio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #12121c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4c85ff;
+            border-radius: 6px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background: linear-gradient(135deg, #2a2a3d, #1b1b2a);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            margin-top: 100px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #4c85ff;
+            text-shadow: 2px 2px 10px rgba(76, 133, 255, 0.8);
+            margin-bottom: 10px;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section:hover {
+            transform: scale(1.03);
+        }
+
+        .developer {
+            font-size: 20px;
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .developer span {
+            color: #ffcc00;
+        }
+
+        /* Portfolio Section */
+        .portfolio h2 {
+            font-size: 2.2em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.7);
+        }
+
+        .portfolio-item {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+        }
+
+        .portfolio-title {
+            font-size: 1.8em;
+            color: #4c85ff;
+        }
+
+        .portfolio-desc {
+            font-size: 16px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#developers">Developers</a>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+
+    <div class="container">
+        <h1>BlueMoon Studio</h1>
+        <p>Welcome to our creative space!</p>
+
+        <div class="section" id="developers">
+            <h2>About the Developers</h2>
+            <div class="developer"><span>Arjun:</span> The Programmer</div>
+            <div class="developer"><span>Eeshaan:</span> Concept Creator</div>
+        </div>
+
+        <div class="section portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-item">
+                <div class="portfolio-title">Astralis v0.0.1 (Demo): Game</div>
+                <div class="portfolio-desc">A space colony builder game where players design, expand, and manage futuristic settlements in deep space.</div>
+                <div class="portfolio-desc">Release Date: Coming soon </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
