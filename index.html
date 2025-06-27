@@ -7,7 +7,7 @@
     <style>
         /* Global Styles */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Century Gothic', sans-serif;
             background: radial-gradient(circle at center, #0d0d1f, #060612);
             color: #fff;
             margin: 0;
@@ -119,8 +119,8 @@
         }
 
         .portfolio-item {
-            margin-top: 30px;
-            padding: 30px;
+            margin-top: 3vw;
+            padding: 2em;
             background: rgba(255, 255, 255, 0.12);
             border-radius: 12px;
             box-shadow: 0 0 30px rgba(255, 204, 0, 0.6);
@@ -128,6 +128,10 @@
             cursor: pointer;
             text-align: center;
             width: 85%;
+
+            /* Procedural spacing based on content */
+            min-height: fit-content;
+            margin-bottom: calc(1em + 1vh);
         }
 
         .portfolio-item:hover {
@@ -143,7 +147,7 @@
 
         .portfolio-desc {
             font-size: 18px;
-            color: #ddd;
+            color: #82c9f5;
         }
 
         /* Smooth Scroll */
@@ -172,20 +176,34 @@
         <div class="section" id="developers">
             <h2>About the Developers</h2>
             <div class="developer"><span>Arjun:</span> The Programmer</div>
-            <div class="developer"><span>Eeshaan:</span> Concept Creator</div>
+            <div class="developer"><span>Eshaan:</span> Concept Creator</div>
         </div>
 
         <div class="section portfolio" id="portfolio">
             <h2>Portfolio</h2>
 
             <div class="portfolio-item">
-                <div class="portfolio-title"></div>
-                <div class="portfolio-desc"></div>
-                <div class="portfolio-desc"></div>
-                <div class="portfolio-desc"></div>
-                <div class="portfolio-desc"> <a href=""></a></div>
-                
+                <div class="portfolio-title">PhotoEdit v1 (exe)</div>
+                <div class="portfolio-desc">This is a project which can be used to edit photos!</div>
+                <div class="portfolio-desc">It was made using clear code's tutorial</div>
+                <div class="portfolio-desc">There are many more updates to come</div>
+                <div class="portfolio-desc">Also join my discord at <a href="https://discord.com/channels/1374762668623396914/1374762669248217202">Discord link</a></div>
+                <div class="portfolio-desc">Also check out my youtube vedio <a href="https://www.youtube.com/watch?v=5MGF_3Xnz7c">Youtube link</a></div>
+                <div class="portfolio-desc">Last but not least here is the project exe <a href="https://drive.google.com/file/d/1drY3j8XfXw-CW296hXxiPKNjMzp2zdV6/view?usp=sharing">Project link</a></div>
+                <div class="portfolio-desc">Instructions</div>
+                <div class="portfolio-desc">Pls unzip file and go to 'dist' folder and click on the one that says 'main'</div>
+            </div> <!--  Closing tag added here -->
+
+            <div class="portfolio-item">
+                <div class="portfolio-title">trAIl v1.0b (exe)</div>
+                <div class="portfolio-desc">This is a project which is a doodle guesser (or more of a shape guesser)!</div>
+                <div class="portfolio-desc">There are many more updates to come</div>
+                <div class="portfolio-desc">Also join my discord at <a href="https://discord.com/channels/1374762668623396914/1374762669248217202">Discord link</a></div>
+                <div class="portfolio-desc">Last but not least here is the project exe <a href="https://drive.google.com/file/d/1jMb4AaS3TPYf-cw1k0h2G8yJ11OaVM43/view?usp=sharing">Project link</a></div>
+                <div class="portfolio-desc">Instructions</div>
+                <div class="portfolio-desc">Pls unzip file and go to 'dist' folder and click on the one that says 'main'</div>
             </div>
+
         </div>
     </div>
 </body>
